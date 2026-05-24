@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import GithubStats from "./components/GithubStats";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Resume from "./components/Resume";
@@ -36,18 +37,31 @@ function App() {
 
   return (
     <div className="bg-[#0f172a] text-white overflow-hidden">
+
+      {/* BACKGROUND EFFECTS */}
       <Particles />
       <CursorGlow />
       <ScrollProgress />
 
+      {/* MAIN CONTENT */}
       <Navbar />
+
       <Hero />
+
       <About />
+
       <Skills />
+
+      <GithubStats />
+
       <Projects />
+
       <Certifications />
+
       <Resume />
+
       <Contact />
+
       <Footer />
     </div>
   );
