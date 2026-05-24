@@ -32,10 +32,10 @@ const GithubStats = () => {
           </p>
         </motion.div>
 
-        {/* STATS */}
+        {/* TOP SECTION */}
         <div className="grid lg:grid-cols-2 gap-10">
 
-          {/* GITHUB STATS */}
+          {/* STATS CARD */}
           <motion.div
             initial={{
               opacity: 0,
@@ -45,16 +45,16 @@ const GithubStats = () => {
               opacity: 1,
               x: 0,
             }}
-            className="bg-[#1f2937] rounded-3xl p-6 border border-gray-700"
+            className="bg-[#1f2937] rounded-3xl p-6 border border-gray-700 overflow-hidden"
           >
             <img
-              src="https://github-readme-stats.vercel.app/api?username=Anisettygnanasai&show_icons=true&theme=tokyonight&hide_border=true"
-              alt="github stats"
+              src="https://github-readme-stats.vercel.app/api?username=Anisettygnanasai&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=1800"
+              alt="GitHub Stats"
               className="w-full"
             />
           </motion.div>
 
-          {/* STREAK */}
+          {/* STREAK CARD */}
           <motion.div
             initial={{
               opacity: 0,
@@ -64,11 +64,11 @@ const GithubStats = () => {
               opacity: 1,
               x: 0,
             }}
-            className="bg-[#1f2937] rounded-3xl p-6 border border-gray-700"
+            className="bg-[#1f2937] rounded-3xl p-6 border border-gray-700 overflow-hidden"
           >
             <img
-              src="https://streak-stats.demolab.com?user=Anisettygnanasai&theme=tokyonight&hide_border=true"
-              alt="github streak"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=Anisettygnanasai&theme=tokyonight&hide_border=true"
+              alt="GitHub Streak"
               className="w-full"
             />
           </motion.div>
@@ -84,11 +84,11 @@ const GithubStats = () => {
             opacity: 1,
             y: 0,
           }}
-          className="bg-[#1f2937] rounded-3xl p-6 border border-gray-700 mt-10"
+          className="bg-[#1f2937] rounded-3xl p-6 border border-gray-700 mt-10 overflow-hidden"
         >
           <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anisettygnanasai&layout=compact&theme=tokyonight&hide_border=true"
-            alt="languages"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anisettygnanasai&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800"
+            alt="Top Languages"
             className="w-full"
           />
         </motion.div>
